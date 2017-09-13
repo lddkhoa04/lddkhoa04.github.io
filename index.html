@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>ESI</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+    <div class="wrapper">
+        <h1 class="title">My test</h1>
+        <form id="frm_submit" action="javascript:clickAction()">
+            <div class="form-control">
+                <label for="limit">Limit</label>
+                <input type="number" id="limit" name="limit" placeholder="Limit character to wrap" min="1" value="9">
+            </div>
+            <div class="form-control">
+                <label for="text">Text</label>
+                <textarea id="text" name="text" placeholder="text to wrap" cols="50" rows="10" required>Công ty cổ phần thương mại</textarea>
+            </div>
+            <button class="btn_wrap">Wrap</button>
+            <button class="btn_wrap" type="button" onclick="unitTest()">UnitText</button>
+        </form>
+        <div class="form-control mt20">
+            <p>Result:</p>
+            <p class="result" id="result">
+            </p>
+        </div>
+        <div class="form-control mt20">
+            <p>Unit Test:</p>
+            <table class="unittest" id="unittest" width="600px">
+                <thead>
+                    <tr>
+                        <th width="15%">Limit</th>
+                        <th width="35%">Expectation Result</th>
+                        <th width="35%">Actual Result</th>
+                        <th width="15%">Passed</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script type="text/javascript" src="common.js"></script>
+</body>
+</html>
